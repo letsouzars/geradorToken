@@ -1,20 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
+import { NavigationContainer } from '@react-navigation/native'
+import { Routes } from './routes'
 
 export default function App() {
+
   return (
-    <View style={ESTILO.container}>
-      <Text>
-        Meu app!
-      </Text>
-    </View>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   )
 }
-
-const ESTILO = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#f3f3ff",
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})
